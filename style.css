@@ -1,0 +1,59 @@
+@charset "UTE-8";
+
+*{margin: 0; padding: 0;}
+a{text-decoration: none; }
+li{list-style: none;}
+
+
+#nav{position: fixed; 
+left: 0; top: 0; width: 100%;
+
+/* position:absolute, fixed되면 자식의 float에 의해 깨짐현상 안생김 */
+}
+#nav h1{float: left; 
+    color: #fff;
+    font-size: 40px;
+    padding: 5px 5px 5px 20px;
+}
+#nav ul{float: right;}
+#nav ul li{float: left;}
+#nav ul li a{
+    /* 인라인요소는 padding에서 상하적용안됨 */
+    display: block;
+    padding: 20px 15px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#nav ul li.active a{
+    color: #000; font-weight: bold;
+}
+#contents{
+    text-align: center;
+}
+#contents>div{
+    height: 100vh;
+}
+#contents>div h2{
+    padding-top: 20%;
+    font-size: 80px;
+    color: #fff;
+}
+#contents>div#section1{
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    }
+    #contents>div#section2{
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    }
+    #contents>div#section3{
+    background: linear-gradient(to right, #6be585, #dd3e54);
+    }
+    #contents>div#section4{
+    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+    }
+    #contents>div#section5{
+    background: linear-gradient(to right, #fffcdc, #d9a7c7);
+    }
+    #contents>div#section6{
+    background: linear-gradient(to right, #000C40, #F0F2F0); 
+    }
